@@ -47,6 +47,7 @@ npm run express-build
 
 # Reference
 1. [How To Setup Your Ember Project With Node or io.js And Express](http://www.programwitherik.com/setup-your-ember-project-with-node/)
+2. [Quickest Backend API for Ember - Ember Igniter](https://emberigniter.com/quickest-backend-api-for-ember/)
 
 # License
 MIT
