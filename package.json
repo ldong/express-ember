@@ -12,7 +12,11 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "express-server": "node express-server/index.js",
+    "express-build": "ember build --environment=production && node express-server/index.js",
+    "postinstall": "[ -f ./node_modules/bower/bin/bower ] && npm run-script bower || echo 'Bower not installed, skipping'",
+    "bower": "rm -rf ./bower_components; ./node_modules/bower/bin/bower cache clean; ./node_modules/bower/bin/bower install"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
@@ -42,5 +46,8 @@
   "engines": {
     "node": ">= 0.12.0"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "express": "^4.15.2"
+  }
 }

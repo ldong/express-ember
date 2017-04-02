@@ -1,52 +1,50 @@
-# playground
-
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+# README
 
 ## Prerequisites
 
-You will need the following things properly installed on your computer.
+```bash
+ember -v
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with NPM)
-* [Bower](https://bower.io/)
-* [Ember CLI](https://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+# ember-cli: 2.11.1
+# node: 7.8.0
+# os: darwin x64
+```
 
-## Installation
+## Steps
 
-* `git clone <repository-url>` this repository
-* `cd playground`
-* `npm install`
-* `bower install`
+```
+ember new playground
+cd playground
+npm install express --save
 
-## Running / Development
+mkdir express-server
+touch express-server/index.js
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+mkdir server
+touch server/index.js
 
-### Code Generators
+node express-server/index.js
+```
 
-Make use of the many generators for code, try `ember help generate` for more details
+Result:
 
-### Running Tests
+```bash
+#  Only 4 files modified
+#  modified:   README.md
+#  new file:   express-server/index.js
+#  modified:   package.json
+#  new file:   server/index.js
 
-* `ember test`
-* `ember test --server`
+````
 
-### Building
+## Instructions
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+```bash
+npm install
+npm run express-build
+```
 
-### Deploying
 
-Specify what it takes to deploy your app.
+# Reference
 
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+1. [How To Setup Your Ember Project With Node or io.js And Express](http://www.programwitherik.com/setup-your-ember-project-with-node/)
